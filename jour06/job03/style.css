@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.section{
+    background-color: #ffca4b;
+    height: auto;
+    width: 100%;
+    
+
+}
+@media screen and (max-width: 1600px ) {
+    .section{
+        flex-direction: row;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px ) {
+    .section{
+        margin: 2vh;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-auto-rows: 25vh;
+        column-gap: 3rem;
+        row-gap: 3rem;
+
+
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+    .section{
+        flex-direction: column;
+
+    }
+}
